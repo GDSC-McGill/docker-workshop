@@ -1,0 +1,7 @@
+services:
+  pyserver:
+    build: ./python_server/
+  node_client:
+    depends_on:
+      - pyserver
+    build: ./node_client/
